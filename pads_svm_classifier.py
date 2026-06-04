@@ -74,7 +74,7 @@ try:
     df = pd.read_csv(FEATURES_PATH)
     df['condition'] = df['condition'].astype(str).str.upper().str.strip()
     
-    # Run Experiment 1: PD vs HC
+    # Run Experiment 1: PD vs HC 
     run_comprehensive_analysis(df, "Parkinson's (PD) vs. Healthy Control (HC)", 
                                positive_class="PARKINSON'S", negative_class="HEALTHY")
     
