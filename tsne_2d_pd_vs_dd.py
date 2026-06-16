@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.manifold import TSNE
 
 def extract_window_features(signal_segment, sampling_rate=100.0):
-    features = []
+    features = [] 
     x, y, z = signal_segment[:, 0], signal_segment[:, 1], signal_segment[:, 2]
     features.extend([np.mean(x), np.std(x), np.std(y), np.std(z)])
     mag = np.sqrt(x**2 + y**2 + z**2)
